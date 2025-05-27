@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling & JavaScript Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    Advanced Styling and JavaScript – Task 3
+  </header>
+
+  <div class="container">
+
+    <!-- Quiz Section -->
+    <div class="section" id="quiz-section">
+      <h2>🎯 Interactive Quiz</h2>
+
+      <div class="quiz-question">
+        <p>Q1. What does CSS stand for?</p>
+        <div class="quiz-options">
+          <button onclick="checkAnswer(1, 'a', this)">A. Cascading Style Sheets</button>
+          <button onclick="checkAnswer(1, 'b', this)">B. Computer Styled Sheets</button>
+          <button onclick="checkAnswer(1, 'c', this)">C. Creative Style Syntax</button>
+        </div>
+        <div id="result1" class="result"></div>
+      </div>
+
+      <div class="quiz-question">
+        <p>Q2. Which method is used to fetch data from an API in JavaScript?</p>
+        <div class="quiz-options">
+          <button onclick="checkAnswer(2, 'b', this)">A. getData()</button>
+          <button onclick="checkAnswer(2, 'a', this)">B. fetch()</button>
+          <button onclick="checkAnswer(2, 'c', this)">C. requestAPI()</button>
+        </div>
+        <div id="result2" class="result"></div>
+      </div>
+
+      <div id="score-board">Score: <span id="score">0</span>/2</div>
+    </div>
+
+    <!-- API Section -->
+    <div class="section" id="api-section">
+      <h2>😂 Fetch a Random Joke</h2>
+      <button class="fetch-button" onclick="getJoke()">Get Joke</button>
+      <div class="api-result" id="joke"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

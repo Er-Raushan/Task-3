@@ -1,0 +1,125 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f8fc;
+      color: #222;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      background-color: white;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    /* Quiz Styles */
+    .quiz-question {
+      margin-bottom: 2rem;
+    }
+
+    .quiz-question p {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .quiz-options button {
+      display: block;
+      margin: 0.4rem 0;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .quiz-options button:hover {
+      background-color: #005fa3;
+    }
+
+    .quiz-options button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .result {
+      margin-top: 0.3rem;
+      font-weight: bold;
+    }
+
+    #score-board {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #444;
+    }
+
+    /* API Styles */
+    .api-result {
+      margin-top: 1rem;
+      font-style: italic;
+      min-height: 40px;
+    }
+
+    .loader {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    button.fetch-button {
+      margin-top: 1rem;
+      background-color: #28a745;
+    }
+
+    button.fetch-button:hover {
+      background-color: #1e7e34;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.2rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
+      .quiz-options button {
+        font-size: 0.95rem;
+      }
+    }
